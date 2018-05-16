@@ -5,10 +5,18 @@
     <title>JavaScript Examples</title>
 </head>
 <body>
-
-<svg width = "500" height="500">
-  <rect width = "100" height="100" fill="#F44366" stroke="#8bc34a" stroke-width="10" x="25" y="25"></rect>
-</svg>
-
+  <svg width = "500" height="500">
+      <!-- =============================================rectangle===================================================== -->    
+      <!-- X axis : the diastance betwen the left side of the svg element and the left side od the rectangle is 25px, left to right start from 0 and go up x
+      Y axis : the diastance betwen the top side of the svg element and the top side od the rectangle is 25px, top to bottom start from 0 and go up y 
+      In some cases you may want the rectangle exactly at the corner so set x and y as half the size pf the stroke-->
+      <rect width = "100" height="100" fill="#F44366" stroke="#8bc34a" stroke-width="10" x="25" y="25"></rect>
+      <!-- ==================================================circle================================================ -->
+      <circle r="100" cx="105" cy="105" fill="#9c27b0" stroke="#e91e63" stroke-width="10"> </circle>
+      <!-- ==================================================ellipse================================================ -->
+      <ellipse rx="200" ry="100" cx="205" cy="105" fill="#2196f3" stroke="#000" stroke-width="10"></ellipse>
+      <!-- ==================================================line================================================ -->
+      <line x1="25" y1="24" x2=100 y2="100" stroke="red" stroke-width="10"></line>
+  </svg>
 </body>
 </html>
