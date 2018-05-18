@@ -56,12 +56,18 @@
             "
         fill="none" stroke="yellow"stroke-width="10"></path> -->
         <!-- ==================================================text================================================ -->
-        <a xlink:href="https://google.com" target="_blank">
+        <!-- <a xlink:href="https://google.com" target="_blank">
             <text x="50" y="50" fill="red" font-size="30">
                 Hello World!!
                 <tspan x="200" y="200"> Second Line</tspan>
             </text>
-        </a>
+        </a> -->
+        <!-- ==================================================definition, groups and markers================================================ -->
+        <defs >
+            <rect width="50" height="50" x="0" y="0" id="rectangle"></rect>
+        </defs>
+        <use xlink:href="#rectangle" x="100" y="100"></use>
+        <use xlink:href="#rectangle" x="200" y="200"></use>
         <script type="text/javascript" src="layout.js"></script>
 
   </svg>
