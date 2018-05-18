@@ -63,13 +63,23 @@
             </text>
         </a> -->
         <!-- ==================================================definition, groups and markers================================================ -->
-        <defs >
+        <!-- <defs >
             <g id="rectangle">
                 <rect width="50" height="50"></rect>
                 <rect width="50" height="50" x="50" fill="blue"></rect>
             </g>
         </defs>
-        <use xlink:href="#rectangle"></use>
+        <use xlink:href="#rectangle"></use> -->
+        <!-- ==================================================text-paths================================================ -->
+        <defs>
+            <path id="custom-text-path"
+                    d="M0,0 L300,300"></path>
+        </defs>
+        <text x="100" y="100" stroke="#000" font-size="30">
+            <textpath xlink:href="#custom-text-path">
+                    Hello World!!
+            </textpath>
+        </text>
         <script type="text/javascript" src="layout.js"></script>
 
   </svg>
