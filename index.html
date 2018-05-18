@@ -20,9 +20,20 @@
         <!-- ==================================================polygons================================================ -->
         <!-- <polygon points = "220,10  300,210 170,250 123,234" fill = "#607d8b" stroke = "#000" stroke-width = "10"></polygon> -->
         <!-- ==================================================polyline================================================ -->
-        
-        <polyline points = "220,10  300,210 170,250 123,234" stroke = "#000" stroke-width = "10" fill = "none"></polyline>
-            
+        <!-- polyline is constructed in the same way as the polygon itself, when fill is not none except one thing that polyline leaves one side open -->
+        <!-- <polyline points = "220,10  300,210 170,250 123,234" stroke = "#000" stroke-width = "10" fill = "none"></polyline> -->
+        <!-- ==================================================paths================================================ -->
+        <path d="
+                M 100, 100 
+                L 300, 150 
+                L 300, 300
+                Z
+                M 150, 200
+                L 30, 30
+                L 10, 200
+                Z
+            "
+            fill="none" stroke="#000"stroke-width="10"></path>
         <script type="text/javascript" src="layout.js"></script>
 
   </svg>
