@@ -72,14 +72,23 @@
         <use xlink:href="#rectangle"></use> -->
         <!-- ==================================================text-paths================================================ -->
         <defs>
-            <path id="custom-text-path"
-                    d="M0,0 Q0,100 150,100"></path>
+            <path id="straight-text-path"
+                    d="M0,0 L300,300"></path>
         </defs>
+        <defs>
+                <path id="curved-text-path"
+                        d="M0,0 Q0,100 150,100"></path>
+            </defs>
         <text x="10" y="100" stroke="#000" font-size="30">
-            <textpath xlink:href="#custom-text-path">
+            <textpath xlink:href="#curved-text-path">
                     Hello World!!
             </textpath>
         </text>
+        <text x="150" y="100" stroke="#000" font-size="30">
+                <textpath xlink:href="#straight-text-path">
+                        Hello World!!
+                </textpath>
+            </text>
         <script type="text/javascript" src="layout.js"></script>
 
   </svg>
