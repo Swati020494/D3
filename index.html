@@ -71,7 +71,7 @@
         </defs>
         <use xlink:href="#rectangle"></use> -->
         <!-- ==================================================text-paths================================================ -->
-        <defs>
+        <!-- <defs>
             <path id="straight-text-path"
                     d="M0,0 L300,300"></path>
         </defs>
@@ -88,7 +88,26 @@
                 <textpath xlink:href="#straight-text-path">
                         Hello World!!
                 </textpath>
-            </text>
+            </text> -->
+        <!-- ==================================================text-paths================================================ -->
+        <defs>
+            <clipPath id="custom-clip-path" >
+                <rect 
+                    width = "200" height="200" x="250" y="250 ">
+                </rect>
+            </clipPath>
+        </defs>
+        <circle 
+            r="200" cx="250" cy="250" fill="#9c27b0" clip-path="url(#custom-clip-path)"
+            stroke="#e91e63" stroke-width="10"> 
+        </circle>
+        <!-- Clip path visualization -->
+        <rect 
+            width = "200" height="200" x="250" y="250" fill="none" stroke="green" stroke-width="5">
+        </rect>
+        <circle 
+            r="200" cx="250" cy="250" fill="none" stroke="red" stroke-width="5"> 
+        </circle>
         <script type="text/javascript" src="layout.js"></script>
 
   </svg>
