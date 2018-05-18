@@ -64,10 +64,12 @@
         </a> -->
         <!-- ==================================================definition, groups and markers================================================ -->
         <defs >
-            <rect width="50" height="50" x="0" y="0" id="rectangle"></rect>
+            <g id="rectangle">
+                <rect width="50" height="50"></rect>
+                <rect width="50" height="50" x="50" fill="blue"></rect>
+            </g>
         </defs>
-        <use xlink:href="#rectangle" x="100" y="100"></use>
-        <use xlink:href="#rectangle" x="200" y="200"></use>
+        <use xlink:href="#rectangle"></use>
         <script type="text/javascript" src="layout.js"></script>
 
   </svg>
