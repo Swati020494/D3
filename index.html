@@ -10,20 +10,38 @@
         <!-- X axis : the diastance betwen the left side of the svg element and the left side od the rectangle is 25px, left to right start from 0 and go up x
         Y axis : the diastance betwen the top side of the svg element and the top side od the rectangle is 25px, top to bottom start from 0 and go up y 
         In some cases you may want the rectangle exactly at the corner so set x and y as half the size pf the stroke-->
-        <!-- <rect width = "400" height="400" fill="#F44366" stroke="#8bc34a" stroke-width="10" x="25" y="25"></rect> -->
+        <!-- <rect 
+            width = "400" height="400" fill="#F44366" 
+            stroke="#8bc34a" stroke-width="10" x="25" y="25">
+            </rect> -->
         <!-- ==================================================circle================================================ -->
-        <!-- <circle r="100" cx="105" cy="105" fill="#9c27b0" stroke="#e91e63" stroke-width="10"> </circle> -->
+        <!-- <circle 
+            r="100" cx="105" cy="105" fill="#9c27b0" 
+            stroke="#e91e63" stroke-width="10"> 
+            </circle> -->
         <!-- ==================================================ellipse================================================ -->
-        <!-- <ellipse rx="200" ry="100" cx="205" cy="105" fill="#2196f3" stroke="#000" stroke-width="10"></ellipse> -->
+        <!-- <ellipse 
+            rx="200" ry="100" cx="205" cy="105" fill="#2196f3" 
+            stroke="#000" stroke-width="10">
+            </ellipse> -->
         <!-- ==================================================line================================================ -->
-        <!-- <line x1="25" y1="24" x2=100 y2="100" stroke="red" stroke-width="10"></line> -->
+        <!-- <line 
+                x1="25" y1="24" x2=100 y2="100" 
+                stroke="red" stroke-width="10">
+            </line> -->
         <!-- ==================================================polygons================================================ -->
-        <!-- <polygon points = "220,10  300,210 170,250 123,234" fill = "#607d8b" stroke = "#000" stroke-width = "10"></polygon> -->
+        <!-- <polygon 
+            points = "220,10  300,210 170,250 123,234" fill = "#607d8b" 
+            stroke = "#000" stroke-width = "10">
+            </polygon> -->
         <!-- ==================================================polyline================================================ -->
         <!-- polyline is constructed in the same way as the polygon itself, when fill is not none except one thing that polyline leaves one side open -->
-        <!-- <polyline points = "220,10  300,210 170,250 123,234" stroke = "#000" stroke-width = "10" fill = "none"></polyline> -->
+        <!-- <polyline 
+            points = "220,10  300,210 170,250 123,234" stroke = "#000" 
+            stroke-width = "10" fill = "none">
+            </polyline> -->
         <!-- ==================================================paths================================================ -->
-        <path d="
+        <!-- <path d="
                 M 100, 100 
                 L 300, 150 
                 L 300, 300
@@ -36,7 +54,14 @@
                 l 300, 300
                 q 200, 400 100, 200
             "
-        fill="none" stroke="yellow"stroke-width="10"></path>
+        fill="none" stroke="yellow"stroke-width="10"></path> -->
+        <!-- ==================================================text================================================ -->
+        <a xlink:href="https://google.com" target="_blank">
+            <text x="50" y="50" fill="red" font-size="30">
+                Hello World!!
+                <tspan x="200" y="200"> Second Line</tspan>
+            </text>
+        </a>
         <script type="text/javascript" src="layout.js"></script>
 
   </svg>
