@@ -3,120 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>JavaScript Examples</title>
+    <style>
+    .eachDiv {
+                top: 200px;
+                float: left;
+                width: 60ps;
+                left: 50px;
+                font-size: 18px;
+            }
+    </style>
 </head>
 <body>
-  <svg width = "500" height="500">
-        <!-- =============================================rectangle===================================================== -->    
-        <!-- X axis : the diastance betwen the left side of the svg element and the left side od the rectangle is 25px, left to right start from 0 and go up x
-        Y axis : the diastance betwen the top side of the svg element and the top side od the rectangle is 25px, top to bottom start from 0 and go up y 
-        In some cases you may want the rectangle exactly at the corner so set x and y as half the size pf the stroke-->
-        <!-- <rect 
-            width = "400" height="400" fill="#F44366" 
-            stroke="#8bc34a" stroke-width="10" x="25" y="25">
-            </rect> -->
-        <!-- ==================================================circle================================================ -->
-        <!-- <circle 
-            r="100" cx="105" cy="105" fill="#9c27b0" 
-            stroke="#e91e63" stroke-width="10"> 
-            </circle> -->
-        <!-- ==================================================ellipse================================================ -->
-        <!-- <ellipse 
-            rx="200" ry="100" cx="205" cy="105" fill="#2196f3" 
-            stroke="#000" stroke-width="10">
-            </ellipse> -->
-        <!-- ==================================================line================================================ -->
-        <!-- <line 
-                x1="25" y1="24" x2=100 y2="100" 
-                stroke="red" stroke-width="10">
-            </line> -->
-        <!-- ==================================================polygons================================================ -->
-        <!-- <polygon 
-            points = "220,10  300,210 170,250 123,234" fill = "#607d8b" 
-            stroke = "#000" stroke-width = "10">
-            </polygon> -->
-        <!-- ==================================================polyline================================================ -->
-        <!-- polyline is constructed in the same way as the polygon itself, when fill is not none except one thing that polyline leaves one side open -->
-        <!-- <polyline 
-            points = "220,10  300,210 170,250 123,234" stroke = "#000" 
-            stroke-width = "10" fill = "none">
-            </polyline> -->
-        <!-- ==================================================paths================================================ -->
-        <!-- <path d="
-                M 100, 100 
-                L 300, 150 
-                L 300, 300
-                Q 200, 400 100, 200
-            "
-            fill="none" stroke="#000"stroke-width="10"></path>
-        <path d="
-                m 100, 100 
-                l 300, 150 
-                l 300, 300
-                q 200, 400 100, 200
-            "
-        fill="none" stroke="yellow"stroke-width="10"></path> -->
-        <!-- ==================================================text================================================ -->
-        <!-- <a xlink:href="https://google.com" target="_blank">
-            <text x="50" y="50" fill="red" font-size="30">
-                Hello World!!
-                <tspan x="200" y="200"> Second Line</tspan>
-            </text>
-        </a> -->
-        <!-- ==================================================definition, groups and markers================================================ -->
-        <!-- <defs >
-            <g id="rectangle">
-                <rect width="50" height="50"></rect>
-                <rect width="50" height="50" x="50" fill="blue"></rect>
-            </g>
-        </defs>
-        <use xlink:href="#rectangle"></use> -->
-        <!-- ==================================================text-paths================================================ -->
-        <!-- <defs>
-            <path id="straight-text-path"
-                    d="M0,0 L300,300"></path>
-        </defs>
-        <defs>
-                <path id="curved-text-path"
-                        d="M0,0 Q0,100 150,100"></path>
-            </defs>
-        <text x="10" y="100" stroke="#000" font-size="30">
-            <textpath xlink:href="#curved-text-path">
-                    Hello World!!
-            </textpath>
-        </text>
-        <text x="150" y="100" stroke="#000" font-size="30">
-                <textpath xlink:href="#straight-text-path">
-                        Hello World!!
-                </textpath>
-            </text> -->
-        <!-- ==================================================text-paths================================================ -->
-        <defs>
-            <clipPath id="custom-clip-path" >
-                <rect 
-                    width = "200" height="200" x="250" y="250 ">
-                </rect>
-                <circle 
-                    r="50" cx="200" cy="200"> 
-                </circle>
-            </clipPath>
-        </defs>
-        <circle 
-            r="200" cx="250" cy="250" fill="blue" clip-path="url(#custom-clip-path)"
-            stroke="#e91e63" stroke-width="10"> 
-        </circle>
-        <!-- Clip path visualization -->
-        <rect 
-            width = "200" height="200" x="250" y="250" fill="none" stroke="green" stroke-width="5">
-        </rect>
-        <circle 
-            r="200" cx="250" cy="250" fill="none" stroke="red" stroke-width="5"> 
-        </circle>
-        <circle 
-            r="50" cx="200" cy="200" fill="none" stroke="green" stroke-width="5"> 
-        </circle>
-        <script type="text/javascript" src="layout.js"></script>
-
-  </svg>
-  <script > </script>
+    <svg width = "500" height="500"></svg>
+    <script type="text/javascript" src="layout.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js
+    "></script>
 </body>
 </html>
