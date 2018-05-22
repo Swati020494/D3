@@ -88,7 +88,7 @@ let updateVerticalProduct = () => {
 let updateHorizontalProduct = () => {
     svg.select('.equal').remove();
     svg.select('.center').remove();
-    horiProdText('.leftNos', () => 'translate(0, 0)', d => `${d} .`);
+    horiProdText('.leftNos', () => 'translate(0, 0)', d => `${d}.`);
     horiProdText('.rightNos', () => `translate(${-58}, 0)`, (d) => { count++; return count === 3 ? d : `${d} +`; });
 };
 /**
